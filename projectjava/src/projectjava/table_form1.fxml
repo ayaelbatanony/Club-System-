@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="462.0" style="-fx-background-color: #efe8eb;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectjava.Table_form1Controller">
+   <children>
+      <TableView id="form1_table" fx:id="form1_table" layoutX="8.0" layoutY="22.0" prefHeight="309.0" prefWidth="450.0" style="-fx-background-color: #CCDCDD;">
+        <columns>
+          <TableColumn id="hobby_column" fx:id="hobby_column" prefWidth="109.0" text="Hobby" />
+          <TableColumn id="session_column" fx:id="session_column" prefWidth="170.0" text="Session" />
+            <TableColumn id="price_column" fx:id="price_column" prefWidth="77.0" text="Price" />
+            <TableColumn id="coachName_column" fx:id="coachName_column" prefWidth="93.0" text="Coach_name" />
+        </columns>
+      </TableView>
+      <GridPane layoutX="71.0" layoutY="342.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="85.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="115.0" minWidth="10.0" prefWidth="95.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="92.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="128.0" minWidth="10.0" prefWidth="128.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button id="back_button" fx:id="back_button" mnemonicParsing="false" onAction="#backButtonAction" text="Back" />
+            <Button id="show_button" fx:id="show_button" mnemonicParsing="false" onAction="#showButtonAction" text="Show" GridPane.columnIndex="1" />
+            <Button id="book_button" fx:id="book_button" mnemonicParsing="false" onAction="#bookButtonAction" text="Book" GridPane.columnIndex="2" />
+            <Button id="myBookings_button" fx:id="myBookings_button" mnemonicParsing="false" onAction="#myBookingsButtonAction" text="My Bookings" GridPane.columnIndex="3" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

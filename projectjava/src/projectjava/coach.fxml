@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="376.0" prefWidth="417.0" style="-fx-background-color: #efe8eb;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectjava.coachController">
+    <children>
+        <Button fx:id="button" layoutX="89.0" layoutY="302.0" onAction="#handleButtonAction" text="add" />
+      <Button layoutX="157.0" layoutY="302.0" mnemonicParsing="false" onAction="#updateAction" text="update" />
+      <Button layoutX="245.0" layoutY="302.0" mnemonicParsing="false" onAction="#deleteAction" text="Delete" />
+      <Button layoutX="328.0" layoutY="302.0" mnemonicParsing="false" onAction="#backAction" text="back" />
+      <TableView fx:id="table" layoutX="70.0" layoutY="32.0" prefHeight="258.0" prefWidth="270.0" style="-fx-background-color: #CCDCDD;">
+        <columns>
+          <TableColumn fx:id="c1" prefWidth="75.0" text="course" />
+          <TableColumn fx:id="c2" prefWidth="108.79998779296875" text="session1" />
+            <TableColumn fx:id="c3" prefWidth="85.59996032714844" text="session2" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="302.0" mnemonicParsing="false" onAction="#showButtonAction" text="select" />
+    </children>
+</AnchorPane>

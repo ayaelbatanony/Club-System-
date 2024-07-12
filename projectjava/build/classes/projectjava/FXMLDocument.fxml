@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="389.0" prefWidth="555.0" style="-fx-background-color: #efe8eb;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectjava.FXMLDocumentController">
+   <children>
+      <TableView id="table" fx:id="table" layoutX="24.0" layoutY="61.0" prefHeight="230.0" prefWidth="502.0" style="-fx-background-color: #CCDCDD;">
+        <columns>
+          <TableColumn id="c1" fx:id="c1" prefWidth="151.20001792907715" text="course_name" />
+          <TableColumn id="c2" fx:id="c2" prefWidth="188.79998779296875" text="coach_name" />
+            <TableColumn id="c3" fx:id="c3" prefWidth="162.39993286132812" text="price" />
+        </columns>
+      </TableView>
+      <Button id="show_button" fx:id="show_button" layoutX="456.0" layoutY="323.0" mnemonicParsing="false" onAction="#showButtonAction" text="select">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button id="print_button" fx:id="add" layoutX="51.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleButtonAction1" text="add">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Label layoutX="180.0" layoutY="-10.0" prefHeight="62.0" prefWidth="184.0" text="welcome to Admin Page" underline="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button id="print_button" fx:id="update" layoutX="134.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleButtonAction2" text="update">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button id="print_button" fx:id="delete" layoutX="244.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleButtonAction4" text="Delete">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button id="print_button" fx:id="back" layoutX="364.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleButtonActionBack" text="back">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
